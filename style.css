@@ -1,0 +1,97 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 3em;
+  background-color: rgb(225, 225, 225);
+}
+body ::-webkit-scrollbar {
+  width: 6px;
+}
+body ::-webkit-scrollbar-track {
+  background: inherit;
+}
+body ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.38);
+  border-radius: 6px;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.501);
+}
+body .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  height: 87vh;
+  padding: 2em;
+  border-radius: 8px;
+}
+body .section #content {
+  background-color: rgba(128, 128, 128, 0.066);
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-radius: 8px;
+}
+body .section #content .list-group-item {
+  background-color: rgba(65, 182, 255, 0.2980392157);
+  color: #002b34;
+}
+body .section #form {
+  margin: 0;
+  margin-top: 0.5em;
+}
+body .section #form div button {
+  width: 10em;
+}
+body .sidebar-div {
+  margin-right: 2em;
+}
+body .sidebar-div #basic-addon2 {
+  background-color: rgba(56, 136, 186, 0.61);
+  color: black;
+  font-weight: 450;
+  cursor: pointer;
+}
+body .sidebar {
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 87vh;
+  background-color: white;
+  border-radius: 8px;
+  overflow-y: overlay;
+}
+body .sidebar .sidebar-heading {
+  margin: 0;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  background-color: rgba(38, 95, 130, 0.6);
+  text-align: center;
+}
+body .sidebar ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body .sidebar ul .selected {
+  background-color: rgba(181, 193, 196, 0.42);
+  font-weight: bold;
+}
+body .sidebar ul li {
+  height: 12vh;
+  display: flex;
+  padding-left: 2em;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  transition: all 0.1s;
+}
+body .sidebar ul li:hover {
+  background-color: rgba(181, 193, 196, 0.42);
+  font-weight: bold;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

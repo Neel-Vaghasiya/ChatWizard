@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 3em;
+    // height: 100%;
+    background-color: rgb(225, 225, 225);
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+      
+    ::-webkit-scrollbar-track {
+        background: inherit; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.38); 
+        border-radius: 6px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.501); 
+
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        position: relative;
+        background-color: white;
+        height: 87vh;
+        padding: 2em;
+        border-radius: 8px;
+
+        #content {
+            background-color: rgba(128, 128, 128, 0.066);
+            height: 100%;
+            overflow-y: auto;
+            padding-right: 1em;
+            padding-left: 1em;
+            padding-bottom: 1em;
+            padding-top: 1em;
+            border-radius: 8px;
+            .list-group-item {
+                background-color: #41b6ff4c;
+                color: #002b34;
+            }
+        }
+
+        #form {
+            margin: 0;
+            margin-top: 0.5em;
+
+            div {
+                
+                button {
+                    width: 10em;
+                }
+            }
+        }
+    
+    }
+    .sidebar-div {
+        margin-right: 2em;
+        #basic-addon2 {
+            background-color: rgb(56 136 186 / 61%);
+            color: black;
+            font-weight: 450;
+            cursor: pointer;
+        }
+    }
+
+    .sidebar {
+        height: fit-content;
+        max-height: 87vh;
+        // margin-right: 2em;
+        background-color: white;
+        border-radius: 8px;
+        overflow-y: overlay;
+
+        .sidebar-heading {
+            margin: 0;
+            // padding-left: 1em;
+            padding-top: 0.7em;
+            padding-bottom: 0.7em;
+            // background-color: rgba(62, 62, 62, 0.388);
+            background-color: #265f8299;
+            text-align: center;
+        }
+    
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .selected {
+                background-color: rgb(181 193 196 / 42%);
+                font-weight: bold;
+            }
+    
+            li {
+
+                height: 12vh;
+                display: flex;
+                padding-left: 2em;
+                align-items: center;
+                border-bottom: 1px solid rgb(0, 0, 0, 0.120);
+                transition: all 0.1s;
+            }
+            li:hover {
+                background-color: rgb(181 193 196 / 42%);
+                // background-color: rgba(108, 199, 255, 0.052);
+                font-weight: bold;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
